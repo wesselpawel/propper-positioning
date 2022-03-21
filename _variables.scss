@@ -1,0 +1,22 @@
+@mixin flexHorizontaly($justify){
+    display:flex;
+    justify-content: $justify;
+    flex-flow: row;
+    @media screen and (max-width:760px) {
+        flex-flow: row;
+    }
+}
+
+@mixin flexVerticaly($justify){
+    display:flex;
+    justify-content: $justify;
+    flex-flow: row;
+    @media screen and (max-width:760px) {
+        flex-flow: column;
+    }
+}
+
+@mixin flexCenter(){
+    display:flex;
+    justify-content: center;
+}
